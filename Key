@@ -5,7 +5,6 @@ local Window = OrionLib:MakeWindow(Name = "Key System", HidePremium = false, Sav
 OrionLib:MakeNotification({
 	Name = "Logged in!",
 	Content = "Welcome,"..Player.Name.."Please Enter Key.",
-	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
