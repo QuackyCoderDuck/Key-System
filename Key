@@ -9,16 +9,16 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "TEST_KEY"
+_G.Key = "Hello"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-        print("Correct Key")
+        print("EnteredCorrectKey")
    end
    function CorrectKeyNotifcation()
  OrionLib:MakeNotification({
-	Name = "Corect Key! Loading...",
-	Content = "Please wait while the hub loads!",
+	Name = "Correct Key!",
+	Content = "You have entered the correct key!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 
@@ -30,11 +30,10 @@ function MakeScriptHub()
         OrionLib:Destroy()
 })
 end
-function InncorrectKey()
+function IncorrectKey()
  OrionLib:MakeNotification({
 	Name = "Incorrect Key!",
-	Content = "Please join the discord server in order to get the key!! 
-        https://discord.gg/sruX5ArsAn",
+	Content = "You have entered the incorrect key!	",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -49,7 +48,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddTextbox({
-	Name = "Enter Key --->",
+	Name = "Enter Key",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -64,7 +63,7 @@ Tab:AddButton({
                MakeScriptHub()
                CorrectKeyNotification()
                else
-               InncorrectKeyNotification()
+               IncorrectKeyNotification()
                  end      
   	end    
 })
