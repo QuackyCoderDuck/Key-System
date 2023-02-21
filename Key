@@ -1,5 +1,3 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/QuackyCoderDuck/Library/main/Key%20System')))()
-
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local loadedKey = loadstring(game:HttpGet('https://pastebin.com/raw/4z1JwNUJ'))()
 print (loadedKey)
