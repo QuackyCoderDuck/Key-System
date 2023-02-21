@@ -21,8 +21,8 @@ function MakeScriptHub()
 	Content = "Please wait while the hub loads!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
-          --  loadstring(game:HttpGet("https://raw.githubusercontent.com/QuackyCoderDuck/RHUBV2/main/Hub"))() 
-                OrionLib:MakeNotification({--
+
+                OrionLib:MakeNotification({
 	Name = "Loaded!",
 	Content = "Hub has loaded, enjoy!",
 	Image = "rbxassetid://4483345998",
